@@ -2,48 +2,48 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/contacts",
-      "handler": "contact.find",
+      "path": "/followings",
+      "handler": "following.find",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/contacts/count",
-      "handler": "contact.count",
+      "path": "/followings/count",
+      "handler": "following.count",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/contacts/:id",
-      "handler": "contact.findOne",
+      "path": "/followings/:id",
+      "handler": "following.findOne",
       "config": {
         "policies": []
       }
     },
     {
       "method": "POST",
-      "path": "/contacts",
-      "handler": "contact.create",
+      "path": "/followings",
+      "handler": "following.create",
       "config": {
         "policies": []
       }
     },
     {
       "method": "PUT",
-      "path": "/contacts/:id",
-      "handler": "contact.update",
+      "path": "/followings/:id",
+      "handler": "following.update",
       "config": {
         "policies": []
       }
     },
     {
       "method": "DELETE",
-      "path": "/contacts/:id",
-      "handler": "contact.delete",
+      "path": "/followings/:id",
+      "handler": "following.delete",
       "config": {
         "policies": []
       }

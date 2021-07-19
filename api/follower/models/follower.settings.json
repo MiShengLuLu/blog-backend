@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "posts",
+  "collectionName": "followers",
   "info": {
-    "name": "Post",
+    "name": "follower",
     "description": ""
   },
   "options": {
@@ -12,14 +12,21 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "title": {
+    "name": {
       "type": "string",
-      "required": true,
-      "unique": false
-    },
-    "content": {
-      "type": "richtext",
       "required": true
+    },
+    "htmlUrl": {
+      "type": "string"
+    },
+    "location": {
+      "type": "string"
+    },
+    "blog": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
     },
     "cover": {
       "model": "file",
@@ -28,21 +35,8 @@
         "images"
       ],
       "plugin": "upload",
-      "required": false,
+      "required": true,
       "pluginOptions": {}
-    },
-    "is_publish": {
-      "type": "boolean",
-      "default": false,
-      "required": true
-    },
-    "tags": {
-      "via": "posts",
-      "collection": "tag"
-    },
-    "description": {
-      "type": "text",
-      "required": true
     }
   }
 }
