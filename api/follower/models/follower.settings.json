@@ -37,6 +37,9 @@
       "plugin": "upload",
       "required": true,
       "pluginOptions": {}
+    },
+    "bio": {
+      "type": "text"
     }
   }
 }
